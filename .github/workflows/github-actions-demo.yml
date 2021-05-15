@@ -16,3 +16,7 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - run: echo ${{ secrets.GITHUB_TOKEN}}
+      - run: echo ${{ secrets.AWS_KEY_ID }}
+      - run: echo ${{ secrets.AWS_SECRET_ACCESS_KEY}}
+      - run: echo ${{ secrets.AWS_BUCKET }}
