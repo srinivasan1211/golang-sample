@@ -7,6 +7,8 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: compile and release
+      run: |
+        ls ${{ github.workspace }}
       uses: ngs/go-release.action@v1.0.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -20,6 +22,8 @@ jobs:
     - uses: actions/checkout@master
     - name: compile and release
       uses: ngs/go-release.action@v1.0.1
+      run: |
+        ls ${{ github.workspace }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GOARCH: amd64
@@ -31,6 +35,8 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: compile and release
+      run: |
+        ls ${{ github.workspace }}
       uses: ngs/go-release.action@v1.0.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -43,6 +49,8 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: compile and release
+      run: |
+        ls ${{ github.workspace }}
       uses: ngs/go-release.action@v1.0.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -55,6 +63,8 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: compile and release
+      run: |
+        ls ${{ github.workspace }}
       uses: ngs/go-release.action@v1.0.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -67,6 +77,8 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: compile and release
+      run: |
+        ls ${{ github.workspace }}
       uses: ngs/go-release.action@v1.0.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -79,6 +91,8 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: compile and release
+      run: |
+        ls ${{ github.workspace }}
       uses: ngs/go-release.action@v1.0.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
