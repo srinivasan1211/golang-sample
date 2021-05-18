@@ -1,5 +1,7 @@
 name: GitHub Actions Demo
-on: [release]
+on:
+  release:
+    types: [created]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
