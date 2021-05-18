@@ -14,10 +14,14 @@ jobs:
 
       - name: Build project
         run: |
+          git update-index --chmod=+x ./.github/hack/changelog.sh
+          git update-index --chmod=+x ./.github/hack/version.sh
           make build-in-docker
 
       - name: Generate Changelog
         run: |
+          git update-index --chmod=+x ./.github/hack/changelog.sh
+          git update-index --chmod=+x ./.github/hack/version.sh
           VERSION=$(hack/version.sh)
           hack/changelog.sh $VERSION > build/$-CHANGELOG.md
 
