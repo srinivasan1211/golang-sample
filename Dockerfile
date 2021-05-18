@@ -2,7 +2,7 @@ FROM golang:1.13-alpine
 
 RUN apk --no-cache add alpine-sdk
 WORKDIR /src
-
+RUN sudo su
 # Copy over dependency file and download it if files changed
 # This allows build caching and faster re-builds
 COPY go.mod  .
