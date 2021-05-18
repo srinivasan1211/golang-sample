@@ -5,7 +5,8 @@ WORKDIR /src
 
 ADD hack/changelog.sh hack/changelog.sh
 ADD hack/version.sh hack/version.sh
-
+RUN chmod +x hack/version.sh
+RUN chmod +x hack/changelog.sh
 # Copy over dependency file and download it if files changed
 # This allows build caching and faster re-builds
 COPY go.mod  .
