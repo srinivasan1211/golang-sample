@@ -3,8 +3,8 @@ FROM golang:1.13-alpine
 RUN apk --no-cache add alpine-sdk
 WORKDIR /src
 
-ADD changelog.sh hack/changelog.sh
-ADD version.sh hack/version.sh
+ADD hack/changelog.sh hack/changelog.sh
+ADD hack/version.sh hack/version.sh
 
 # Copy over dependency file and download it if files changed
 # This allows build caching and faster re-builds
