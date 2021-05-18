@@ -2,6 +2,7 @@ FROM golang:1.13-alpine
 
 RUN apk --no-cache add alpine-sdk
 WORKDIR /src
+RUN ls
 RUN chmod +x /hack/version.sh
 RUN chmod +x /hack/changelog.sh
 
