@@ -1,12 +1,16 @@
 name: Build
 
 on:
-  push:
-    branches:
-      - develop
+  # push:
+  #   branches:
+  #     - main
   # pull_request:
   #   branches:
-  #     - develop
+  #     - main
+  push:
+    tags:
+      - '*'
+
 
 jobs:
   goreleaser:
